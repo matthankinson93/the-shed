@@ -1,0 +1,143 @@
+/* CSS to handle media queries, responsive css and font styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Corben&display=swap');
+
+* {
+  font-family: 'Corben', cursive;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  color: #050505;
+  font-size: 2vmin;
+}
+
+@media only screen and (max-width: 1000px) {
+  #mapsLocation {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #navLogo {
+    width: 60%;
+  }
+
+  .navbar.navbar-toggler {
+    margin-bottom: 0 !important;
+  }
+
+  .sm-nav-item {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #mapsLocation {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  #mapsLocation {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #mapsLocation {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+#navLogo {
+  width: 90%;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#shedLink:hover {
+  opacity: 40%;
+  transition: 0.5s;
+}
+
+#chewChewLink:hover {
+  opacity: 40%;
+  transition: 0.5s;
+}
+
+
+#smLogo {
+  font-size: 150%;
+  text-decoration: none;
+}
+
+#smLogo:hover {
+  opacity: 60%;
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  opacity: 60%;
+  transition: 0.2s;
+}
+
+.btn-book-now {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  border: 2px solid #ccc;
+  opacity: 0.9;
+}
+
+.btn-book-now:hover {
+  opacity: 1;
+}
+
+.book-cont {
+  display: flex;
+  float: right;
+}
+
+.content-containers {
+  width: 90%;
+}
+
+.bistro-content {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.bistro-content.visible {
+  opacity: 1;
+}
+
+.nav-img {
+  width: 10%;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right {
+  transform: translateX(33.33%);
+}
+
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+  transform: translateX(-33.33%);
+}
