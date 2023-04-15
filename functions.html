@@ -16,14 +16,16 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Welcome to The Shed!</title>
+  <title>Functions @ Chew Chew Bistro</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light text-center mb-1 ms-2 ps-1">
-    <div class="text-center nav-img">
+  <nav class="navbar navbar-expand-md navbar-light text-center mb-1 ms-1">
+    <div class="text-center nav-img d-flex">
       <a href="./Index.html"><img class="navbar-brand img-thumbnail img-responsive p-0"
-          src="images/the_shed_logo_thumb.jpg" alt=""></a>
+          src="./Images/the_shed_logo_thumb.jpg" alt=""></a>
+          <a style="width:58%; padding-left:2%;" href="./Index.html"><img class="navbar-brand img-thumbnail img-responsive p-0"
+            src="./Images/chew_chew_logo_thumb1.png" alt=""></a>
     </div>
     <button class="navbar-toggler ms-3, mt-3, mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
       aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"
@@ -74,7 +76,7 @@
   </nav>
 
   <div class="container-fluid w-100 p-0 m-0">
-    <img src="Images/foodbanner.jpg" class="img-fluid p-0 m-0" alt="">
+    <img src="./Images/foodbanner.jpg" class="img-fluid p-0 m-0" alt="">
   </div>
 
   <div class="container-fluid mt-3 mb-3 content-containers w-75">
@@ -118,7 +120,7 @@
   <br>
 
   <div class="container-fluid px-5 w-50">
-    <form id="booking-form" action="handleForm.php" method="POST" enctype="multipart/form-data">
+    <form id="booking-form" action="handleFunctionEnquiry.php" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" class="form-control" id="name" name="name" pattern="[A-Za-z ]{1,50}" required>
@@ -200,7 +202,7 @@
           <a href="./functions.html"
             class="fw-lighter footer-link text-decoration-none bg-dark text-white">Functions</a>
           <br>
-          <a href="https://yourbookingpage.com"
+          <a href="https://bookings.wowapps.com/make-booking/chewchewbistro?src=link"
             class="fw-lighter footer-link text-decoration-none bg-dark text-white">Book a table</a>
           <br>
         </div>
@@ -211,8 +213,10 @@
           Wednesday – Sunday 7.30am – 4.00pm
         </div>
         <div class="col-md-12 text-center bg-dark mt-0">
-          <a href="#" class="fa fa-facebook text-white bg-dark m-4 display-4" id="smLogo"></a>
-          <a href="#" class="fa fa-instagram text-white bg-dark m-4 display-4" id="smLogo"></a>
+          <a href="https://www.facebook.com/sunshinecoastauctions.secondhand" target="_blank"
+            class="nav-link fa fa-facebook text-white" id="smLogo"></a>
+          <a href="https://www.instagram.com/theshedpalmwoods/?hl=en" target="_blank"
+            class="nav-link fa fa-instagram text-white" id="smLogo"></a>
           <a href="mailto:sales@theshedsca.com.au?subject=Customer enquiry"
             class="fa fa-envelope text-white bg-dark m-4 display-4" id="smLogo"></a>
         </div>
